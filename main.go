@@ -1,8 +1,6 @@
 package main
 
-import (
-	"github.com/VAtulKumar1/GoByExamples/chapters"
-)
+import "github.com/VAtulKumar1/GoByExamples/chapters"
 
 func main() {
 
@@ -17,6 +15,6 @@ func main() {
 	// chapters.Variables()
 	// chapters.Constants()
 	// chapters.For()
-	chapters.IFElse()
-
+	// chapters.IFElse()
+	chapters.Switch()
 }
