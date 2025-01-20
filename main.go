@@ -15,6 +15,7 @@ func main() {
 	// fmt.Println(!false)
 
 	// chapters.Variables()
-	chapters.Constants()
+	// chapters.Constants()
+	chapters.For()
 
 }
