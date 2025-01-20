@@ -16,5 +16,6 @@ func main() {
 	// chapters.Constants()
 	// chapters.For()
 	// chapters.IFElse()
-	chapters.Switch()
+	// chapters.Switch()
+	chapters.Arrays()
 }
