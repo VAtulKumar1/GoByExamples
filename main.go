@@ -1,21 +1,20 @@
 package main
 
 import (
-	"fmt"
-
 	"github.com/VAtulKumar1/GoByExamples/chapters"
 )
 
 func main() {
 
-	fmt.Println("Hello world")
-	fmt.Println("atul" + "kumar")
-	fmt.Println("1+1=", 1+1)
-	fmt.Println("7.0/3.0=", 7.0/3.0)
-	fmt.Println(true && false)
-	fmt.Println(true || false)
-	fmt.Println(!false)
+	// fmt.Println("Hello world")
+	// fmt.Println("atul" + "kumar")
+	// fmt.Println("1+1=", 1+1)
+	// fmt.Println("7.0/3.0=", 7.0/3.0)
+	// fmt.Println(true && false)
+	// fmt.Println(true || false)
+	// fmt.Println(!false)
 
-	chapters.Variables()
+	// chapters.Variables()
+	chapters.Constants()
 
 }
