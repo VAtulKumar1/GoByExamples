@@ -1,6 +1,10 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+
+	"github.com/VAtulKumar1/GoByExamples/chapters"
+)
 
 func main() {
 
@@ -11,5 +15,7 @@ func main() {
 	fmt.Println(true && false)
 	fmt.Println(true || false)
 	fmt.Println(!false)
+
+	chapters.Variables()
 
 }
