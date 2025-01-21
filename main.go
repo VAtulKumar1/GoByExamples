@@ -17,5 +17,6 @@ func main() {
 	// chapters.For()
 	// chapters.IFElse()
 	// chapters.Switch()
-	chapters.Slices()
+	// chapters.Slices()
+	chapters.Maps()
 }
