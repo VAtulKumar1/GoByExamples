@@ -27,4 +27,9 @@ func main() {
 	fmt.Println("res:", res)
 	res2 := chapters.PlusPlus(1, 2, 3)
 	fmt.Println("res2:", res2)
+	a, b := chapters.Vals()
+	fmt.Println("multi:", a, b)
+	_, c := chapters.Vals()
+	fmt.Println("subset:", c)
+	chapters.Sum(1, 2, 3, 4, 5, 56)
 }
