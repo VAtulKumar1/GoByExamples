@@ -1,9 +1,6 @@
 package main
 
 import (
-	"fmt"
-	"time"
-
 	"github.com/VAtulKumar1/GoByExamples/chapters"
 )
 
@@ -127,14 +124,8 @@ func main() {
 	// 	fmt.Println("err does'nt match argError")
 	// }
 
-	chapters.Rou("direct")
-	go chapters.Rou("goroutines")
+	//
 
-	go func(msg string) {
-		fmt.Println(msg)
-	}("going")
-
-	time.Sleep(time.Second)
-	fmt.Println("done")
+	chapters.Channel()
 
 }
