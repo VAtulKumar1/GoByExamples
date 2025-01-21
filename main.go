@@ -23,13 +23,13 @@ func main() {
 	// chapters.Switch()
 	// chapters.Slices()
 	// chapters.Maps()
-	res := chapters.Plus(2, 3)
-	fmt.Println("res:", res)
-	res2 := chapters.PlusPlus(1, 2, 3)
-	fmt.Println("res2:", res2)
-	a, b := chapters.Vals()
-	fmt.Println("multi:", a, b)
-	_, c := chapters.Vals()
-	fmt.Println("subset:", c)
-	chapters.Sum(1, 2, 3, 4, 5, 56)
+	//
+
+	nextInt := chapters.IntSeq()
+
+	fmt.Println("c1:", nextInt())
+	fmt.Println("c2:", nextInt())
+
+	newInts := chapters.IntSeq()
+	fmt.Println("c3:", newInts())
 }
