@@ -1,9 +1,5 @@
 package main
 
-import (
-	"github.com/VAtulKumar1/GoByExamples/chapters"
-)
-
 func main() {
 
 	// fmt.Println("Hello world")
@@ -126,6 +122,12 @@ func main() {
 
 	//
 
-	chapters.Channel()
+	// chapters.Channel()
+
+	// done := make(chan bool, 1)
+
+	// go chapters.Worker(done)
+
+	// // <-done
 
 }
