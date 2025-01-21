@@ -42,13 +42,22 @@ func main() {
 	// fmt.Println("pass by reference:", i)
 
 	// chapters.Strings()
-	p := chapters.Person{Name: "bob", Age: 28}
-	fmt.Println(p.Name)
+	// p := chapters.Person{Name: "bob", Age: 28}
+	// fmt.Println(p.Name)
 
-	fmt.Println(chapters.Person{Name: "atul"})
-	fmt.Println(&chapters.Person{Name: "Atul"})
-	fmt.Println(chapters.Structs("Sharad"))
-	sp := &p
-	fmt.Println(sp.Name)
+	// fmt.Println(chapters.Person{Name: "atul"})
+	// fmt.Println(&chapters.Person{Name: "Atul"})
+	// fmt.Println(chapters.Structs("Sharad"))
+	// sp := &p
+	// fmt.Println(sp.Name)
+
+	r := chapters.Rect{Width: 10, Height: 30}
+
+	fmt.Println("area:", r.Area())
+	fmt.Println("Perim:", r.Perim())
+
+	rp := &r
+	fmt.Println("area:", rp.Area())
+	fmt.Println("Perim:", rp.Perim())
 
 }
