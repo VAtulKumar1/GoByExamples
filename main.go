@@ -94,26 +94,37 @@ func main() {
 	// var d describer = co
 	// fmt.Println("describer:", d.Describe())
 
-	for _, i := range []int{7, 42} {
-		if r, e := chapters.F(i); e != nil {
-			fmt.Println("f failed:", e)
-		} else {
-			fmt.Println("f worked:", r)
-		}
+	// for _, i := range []int{7, 42} {
+	// 	if r, e := chapters.F(i); e != nil {
+	// 		fmt.Println("f failed:", e)
+	// 	} else {
+	// 		fmt.Println("f worked:", r)
+	// 	}
+	// }
+
+	// for i := range 5 {
+	// 	if err := chapters.MakeTea(i); err != nil {
+	// 		if errors.Is(err, chapters.ErrOutOfTea) {
+	// 			fmt.Println("we should by tea!")
+	// 		} else if errors.Is(err, chapters.ErrPower) {
+	// 			fmt.Println("now it is dark")
+	// 		} else {
+	// 			fmt.Printf("unknown error: %s\n", err)
+	// 		}
+	// 		continue
+	// 	}
+
+	// 	fmt.Println("tea is ready")
+	// }
+
+	_, err := chapters.F1(42)
+	var ae *chapters.ArgError
+
+	if errors.As(err, &ae) {
+		fmt.Println(ae.Arg)
+		fmt.Println(ae.Message)
+	} else {
+		fmt.Println("err does'nt match argError")
 	}
 
-	for i := range 5 {
-		if err := chapters.MakeTea(i); err != nil {
-			if errors.Is(err, chapters.ErrOutOfTea) {
-				fmt.Println("we should by tea!")
-			} else if errors.Is(err, chapters.ErrPower) {
-				fmt.Println("now it is dark")
-			} else {
-				fmt.Printf("unknown error: %s\n", err)
-			}
-			continue
-		}
-
-		fmt.Println("tea is ready")
-	}
 }
