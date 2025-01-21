@@ -1,5 +1,9 @@
 package main
 
+import (
+	"github.com/VAtulKumar1/GoByExamples/chapters"
+)
+
 func main() {
 
 	// fmt.Println("Hello world")
@@ -130,4 +134,13 @@ func main() {
 
 	// // <-done
 
+	// pings := make(chan string, 1)
+	// pongs := make(chan string, 1)
+
+	// chapters.Ping(pings, "passed message")
+	// chapters.Pong(pings, pongs)
+
+	// fmt.Println(<-pongs)
+
+	chapters.Select()
 }
