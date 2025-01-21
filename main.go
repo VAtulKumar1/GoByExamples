@@ -1,6 +1,10 @@
 package main
 
-import "github.com/VAtulKumar1/GoByExamples/chapters"
+import (
+	"fmt"
+
+	"github.com/VAtulKumar1/GoByExamples/chapters"
+)
 
 func main() {
 
@@ -56,13 +60,19 @@ func main() {
 	// fmt.Println("area:", rp.Area())
 	// fmt.Println("Perim:", rp.Perim())
 
-	r := chapters.Rectangle{Width: 3, Height: 4}
-	c := chapters.Circle{R: 5}
+	// r := chapters.Rectangle{Width: 3, Height: 4}
+	// c := chapters.Circle{R: 5}
 
-	chapters.Measure(r)
-	chapters.Measure(c)
+	// chapters.Measure(r)
+	// chapters.Measure(c)
 
-	chapters.DetectCicle(r)
-	chapters.DetectCicle(c)
+	// chapters.DetectCicle(r)
+	// chapters.DetectCicle(c)
+
+	ns := chapters.Transition(chapters.StateIdle)
+	fmt.Println(ns)
+
+	ns2 := chapters.Transition(ns)
+	fmt.Print(ns2)
 
 }
