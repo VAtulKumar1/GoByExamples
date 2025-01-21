@@ -1,6 +1,8 @@
 package main
 
 import (
+	"fmt"
+
 	"github.com/VAtulKumar1/GoByExamples/chapters"
 )
 
@@ -28,5 +30,15 @@ func main() {
 	// res := chapters.Fact(10)
 	// fmt.Println("fact:", res)
 
-	chapters.Range()
+	// chapters.Range()
+
+	i := 1
+	fmt.Println("iVal", i)
+
+	chapters.ZeroVal(i)
+	fmt.Println("pass by value:", i)
+
+	chapters.ZeroPtr(&i)
+	fmt.Println("pass by reference:", i)
+
 }
