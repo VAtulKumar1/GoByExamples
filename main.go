@@ -69,10 +69,28 @@ func main() {
 	// chapters.DetectCicle(r)
 	// chapters.DetectCicle(c)
 
-	ns := chapters.Transition(chapters.StateIdle)
-	fmt.Println(ns)
+	// ns := chapters.Transition(chapters.StateIdle)
+	// fmt.Println(ns)
 
-	ns2 := chapters.Transition(ns)
-	fmt.Print(ns2)
+	// ns2 := chapters.Transition(ns)
+	// fmt.Print(ns2)
+
+	co := chapters.Container{
+		Base: chapters.Base{
+			Num: 1,
+		},
+
+		Str: "some time",
+	}
+
+	fmt.Printf("co={num: %v,str:%v}\n", co.Num, co.Str)
+	fmt.Println("also num:", co.Describe())
+
+	type describer interface {
+		Describe() string
+	}
+
+	var d describer = co
+	fmt.Println("describer:", d.Describe())
 
 }
