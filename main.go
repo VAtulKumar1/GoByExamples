@@ -1,6 +1,10 @@
 package main
 
-import "github.com/VAtulKumar1/GoByExamples/chapters"
+import (
+	"fmt"
+
+	"github.com/VAtulKumar1/GoByExamples/chapters"
+)
 
 func main() {
 
@@ -18,5 +22,9 @@ func main() {
 	// chapters.IFElse()
 	// chapters.Switch()
 	// chapters.Slices()
-	chapters.Maps()
+	// chapters.Maps()
+	res := chapters.Plus(2, 3)
+	fmt.Println("res:", res)
+	res2 := chapters.PlusPlus(1, 2, 3)
+	fmt.Println("res2:", res2)
 }
