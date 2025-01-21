@@ -25,11 +25,8 @@ func main() {
 	// chapters.Maps()
 	//
 
-	nextInt := chapters.IntSeq()
+	//
 
-	fmt.Println("c1:", nextInt())
-	fmt.Println("c2:", nextInt())
-
-	newInts := chapters.IntSeq()
-	fmt.Println("c3:", newInts())
+	res := chapters.Fact(10)
+	fmt.Println("fact:", res)
 }
