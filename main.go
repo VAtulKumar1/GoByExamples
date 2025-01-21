@@ -1,6 +1,8 @@
 package main
 
 import (
+	"fmt"
+
 	"github.com/VAtulKumar1/GoByExamples/chapters"
 )
 
@@ -39,5 +41,14 @@ func main() {
 	// chapters.ZeroPtr(&i)
 	// fmt.Println("pass by reference:", i)
 
-	chapters.Strings()
+	// chapters.Strings()
+	p := chapters.Person{Name: "bob", Age: 28}
+	fmt.Println(p.Name)
+
+	fmt.Println(chapters.Person{Name: "atul"})
+	fmt.Println(&chapters.Person{Name: "Atul"})
+	fmt.Println(chapters.Structs("Sharad"))
+	sp := &p
+	fmt.Println(sp.Name)
+
 }
