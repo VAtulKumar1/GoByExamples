@@ -1,6 +1,7 @@
 package main
 
 import (
+	"errors"
 	"fmt"
 
 	"github.com/VAtulKumar1/GoByExamples/chapters"
@@ -75,22 +76,44 @@ func main() {
 	// ns2 := chapters.Transition(ns)
 	// fmt.Print(ns2)
 
-	co := chapters.Container{
-		Base: chapters.Base{
-			Num: 1,
-		},
+	// co := chapters.Container{
+	// 	Base: chapters.Base{
+	// 		Num: 1,
+	// 	},
 
-		Str: "some time",
+	// 	Str: "some time",
+	// }
+
+	// fmt.Printf("co={num: %v,str:%v}\n", co.Num, co.Str)
+	// fmt.Println("also num:", co.Describe())
+
+	// type describer interface {
+	// 	Describe() string
+	// }
+
+	// var d describer = co
+	// fmt.Println("describer:", d.Describe())
+
+	for _, i := range []int{7, 42} {
+		if r, e := chapters.F(i); e != nil {
+			fmt.Println("f failed:", e)
+		} else {
+			fmt.Println("f worked:", r)
+		}
 	}
 
-	fmt.Printf("co={num: %v,str:%v}\n", co.Num, co.Str)
-	fmt.Println("also num:", co.Describe())
+	for i := range 5 {
+		if err := chapters.MakeTea(i); err != nil {
+			if errors.Is(err, chapters.ErrOutOfTea) {
+				fmt.Println("we should by tea!")
+			} else if errors.Is(err, chapters.ErrPower) {
+				fmt.Println("now it is dark")
+			} else {
+				fmt.Printf("unknown error: %s\n", err)
+			}
+			continue
+		}
 
-	type describer interface {
-		Describe() string
+		fmt.Println("tea is ready")
 	}
-
-	var d describer = co
-	fmt.Println("describer:", d.Describe())
-
 }
