@@ -176,5 +176,6 @@ func main() {
 
 	// chapters.Json()
 	// chapters.Xml()
-	chapters.Time()
+	// chapters.Time()
+	chapters.RandomNumbers()
 }
