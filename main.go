@@ -172,5 +172,7 @@ func main() {
 	// chapters.Recover()
 	// chapters.StringFormatting()
 	// chapters.TextTemplate()
-	chapters.Regex()
+	// chapters.Regex()
+
+	chapters.Json()
 }
