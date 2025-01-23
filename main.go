@@ -142,5 +142,6 @@ func main() {
 
 	// fmt.Println(<-pongs)
 
-	chapters.Timeouts()
+	// chapters.Timeouts()
+	chapters.NonBlockingChannelOperations()
 }
