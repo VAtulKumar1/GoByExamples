@@ -149,5 +149,7 @@ func main() {
 
 	// chapters.Timers()
 
-	chapters.Tickers()
+	// chapters.Tickers()
+
+	chapters.WorkSimulater()
 }
