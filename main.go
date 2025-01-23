@@ -143,5 +143,7 @@ func main() {
 	// chapters.Timeouts()
 	// chapters.NonBlockingChannelOperations()
 
-	chapters.ClosingChannel()
+	// chapters.ClosingChannel()
+
+	chapters.RangeOverChannels()
 }
