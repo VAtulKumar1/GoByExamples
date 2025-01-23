@@ -157,5 +157,7 @@ func main() {
 
 	// chapters.RateLimiting()
 
-	chapters.AtomicCounters()
+	// chapters.AtomicCounters()
+
+	chapters.Mutex()
 }
