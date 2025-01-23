@@ -1,8 +1,6 @@
 package main
 
-import (
-	"github.com/VAtulKumar1/GoByExamples/chapters"
-)
+import "github.com/VAtulKumar1/GoByExamples/chapters"
 
 func main() {
 
@@ -143,5 +141,7 @@ func main() {
 	// fmt.Println(<-pongs)
 
 	// chapters.Timeouts()
-	chapters.NonBlockingChannelOperations()
+	// chapters.NonBlockingChannelOperations()
+
+	chapters.ClosingChannel()
 }
