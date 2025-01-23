@@ -163,5 +163,7 @@ func main() {
 
 	// chapters.StateFulGoRoutines()
 
-	chapters.Soring()
+	// chapters.Soring()
+
+	chapters.CustomSort()
 }
