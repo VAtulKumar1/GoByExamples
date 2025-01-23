@@ -159,5 +159,7 @@ func main() {
 
 	// chapters.AtomicCounters()
 
-	chapters.Mutex()
+	// chapters.Mutex()
+
+	chapters.StateFulGoRoutines()
 }
