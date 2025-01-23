@@ -142,5 +142,5 @@ func main() {
 
 	// fmt.Println(<-pongs)
 
-	chapters.Select()
+	chapters.Timeouts()
 }
