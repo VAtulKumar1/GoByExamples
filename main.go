@@ -167,5 +167,7 @@ func main() {
 
 	// chapters.CustomSort()
 
-	chapters.Panic()
+	// chapters.Panic()
+
+	chapters.Recover()
 }
