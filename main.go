@@ -153,5 +153,7 @@ func main() {
 
 	// chapters.WorkSimulater()
 
-	chapters.WaitGroups()
+	// chapters.WaitGroups()
+
+	chapters.RateLimiting()
 }
