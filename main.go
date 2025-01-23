@@ -145,5 +145,7 @@ func main() {
 
 	// chapters.ClosingChannel()
 
-	chapters.RangeOverChannels()
+	// chapters.RangeOverChannels()
+
+	chapters.Timers()
 }
