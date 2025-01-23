@@ -155,5 +155,7 @@ func main() {
 
 	// chapters.WaitGroups()
 
-	chapters.RateLimiting()
+	// chapters.RateLimiting()
+
+	chapters.AtomicCounters()
 }
