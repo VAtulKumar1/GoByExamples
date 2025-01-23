@@ -175,5 +175,6 @@ func main() {
 	// chapters.Regex()
 
 	// chapters.Json()
-	chapters.Xml()
+	// chapters.Xml()
+	chapters.Time()
 }
