@@ -170,5 +170,6 @@ func main() {
 	// chapters.Panic()
 
 	// chapters.Recover()
-	chapters.StringFormatting()
+	// chapters.StringFormatting()
+	chapters.TextTemplate()
 }
