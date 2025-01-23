@@ -165,5 +165,7 @@ func main() {
 
 	// chapters.Soring()
 
-	chapters.CustomSort()
+	// chapters.CustomSort()
+
+	chapters.Panic()
 }
