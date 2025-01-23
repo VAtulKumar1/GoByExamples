@@ -174,5 +174,6 @@ func main() {
 	// chapters.TextTemplate()
 	// chapters.Regex()
 
-	chapters.Json()
+	// chapters.Json()
+	chapters.Xml()
 }
