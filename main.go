@@ -147,5 +147,7 @@ func main() {
 
 	// chapters.RangeOverChannels()
 
-	chapters.Timers()
+	// chapters.Timers()
+
+	chapters.Tickers()
 }
