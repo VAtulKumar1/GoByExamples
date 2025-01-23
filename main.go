@@ -151,5 +151,7 @@ func main() {
 
 	// chapters.Tickers()
 
-	chapters.WorkSimulater()
+	// chapters.WorkSimulater()
+
+	chapters.WaitGroups()
 }
