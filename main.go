@@ -169,5 +169,6 @@ func main() {
 
 	// chapters.Panic()
 
-	chapters.Recover()
+	// chapters.Recover()
+	chapters.StringFormatting()
 }
